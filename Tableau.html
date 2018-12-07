@@ -8,6 +8,16 @@
 </head>
 <body>
     <div id="tableau"></div>
+    <style>
+        .red
+        {
+            color:red;
+        }
+        .blue{
+            color:blue;
+        }
+
+    </style>
 
     <script>
     let str ="";
@@ -17,8 +27,12 @@
 
         if (tab[i]>35)
         {
-            str += element;
+            str += "<p class= red>" + element + "</p>";
                         
+        }
+        else 
+        {
+            str += "<p class= blue>" + element + "</p>";  
         }
     }
         let tableau = document.getElementById("tableau");
